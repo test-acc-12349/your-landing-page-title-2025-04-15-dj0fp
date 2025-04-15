@@ -3,40 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create stunning landing pages in minutes</title>
     <meta name="description" content="Transform your web presence with professional landing pages. Easy to use, responsive design, and lightning-fast loading.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="font-sans antialiased bg-white text-gray-900">
     <!-- Header -->
     <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="/" class="text-2xl font-bold text-blue-600">Claude</a>
+            <a href="https://test-acc-12349.github.io/your-landing-page-title-2025-04-15-dj0fp" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">Claude</a>
+            
+            <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-8">
                 <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Features</a>
                 <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
                 <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
-                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
             </div>
-            <a href="https://fixrr.online" class="hidden md:inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300">
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden p-2" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars text-2xl text-gray-600"></i>
+            </button>
+
+            <!-- CTA Button -->
+            <a href="https://fixrr.online" class="hidden md:inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                 Get Started
             </a>
         </nav>
+
+        <!-- Mobile Menu Dropdown -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#features" class="block text-gray-600 hover:text-blue-600 transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block text-gray-600 hover:text-blue-600 transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block text-gray-600 hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+                <a href="#faq" class="block text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                <a href="https://fixrr.online" class="block text-center px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300">Get Started</a>
+            </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section class="pt-32 pb-24 bg-gradient-to-b from-blue-50 to-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight mb-8">
-                    Create stunning landing pages in minutes
+                    Create Professional Landing Pages in Minutes
                 </h1>
                 <p class="text-xl text-gray-600 mb-12 leading-relaxed">
-                    Transform your web presence with professional landing pages that convert visitors into customers.
+                    Transform your web presence with stunning, conversion-optimized landing pages that capture leads and drive results. No coding required - just drag, drop, and customize.
                 </p>
-                <a href="https://fixrr.online" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 transition transform hover:scale-105 duration-300">
+                <a href="https://fixrr.online" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                     Start Building Now
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
                 </a>
             </div>
         </div>
@@ -45,34 +79,36 @@
     <!-- Features Section -->
     <section id="features" class="py-24 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">Powerful Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Easy to Use</h3>
-                    <p class="text-gray-600 leading-relaxed">Intuitive interface that makes creating landing pages a breeze, no technical skills required.</p>
+                    <h3 class="text-xl font-semibold mb-4">Intuitive Drag & Drop Builder</h3>
+                    <p class="text-gray-600 leading-relaxed">Create professional pages without any coding knowledge. Our visual editor makes it simple to design and customize your perfect landing page in minutes.</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
+                
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Responsive Design</h3>
-                    <p class="text-gray-600 leading-relaxed">Perfectly adapts to any screen size, ensuring your landing page looks great everywhere.</p>
+                    <h3 class="text-xl font-semibold mb-4">Mobile-First Design</h3>
+                    <p class="text-gray-600 leading-relaxed">Every template is fully responsive and optimized for all devices. Your landing page will look perfect on desktop, tablet, and mobile screens.</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Fast Loading</h3>
-                    <p class="text-gray-600 leading-relaxed">Optimized performance ensures your landing page loads quickly, keeping visitors engaged.</p>
+                    <h3 class="text-xl font-semibold mb-4">Lightning Fast Loading</h3>
+                    <p class="text-gray-600 leading-relaxed">Optimized performance ensures sub-second page loads. Built with modern tech stack and best practices for maximum speed and SEO benefits.</p>
                 </div>
             </div>
         </div>
@@ -81,108 +117,93 @@
     <!-- Benefits Section -->
     <section id="benefits" class="py-24 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Key Benefits</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">Key Benefits</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-center">
+                <div class="text-center transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Save Time</h3>
-                    <p class="text-gray-600">Create professional landing pages in minutes instead of hours or days.</p>
+                    <h3 class="text-xl font-semibold mb-4">Save 80% Development Time</h3>
+                    <p class="text-gray-600">Launch campaigns faster by creating professional landing pages in minutes instead of weeks of custom development.</p>
                 </div>
-                <div class="text-center">
+
+                <div class="text-center transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Increase Conversions</h3>
-                    <p class="text-gray-600">Optimized designs that drive better conversion rates and results.</p>
+                    <h3 class="text-xl font-semibold mb-4">2x Higher Conversion Rates</h3>
+                    <p class="text-gray-600">Conversion-optimized templates and layouts proven to convert more visitors into customers and leads.</p>
                 </div>
-                <div class="text-center">
+
+                <div class="text-center transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Professional Look</h3>
-                    <p class="text-gray-600">Premium designs that enhance your brand and credibility.</p>
+                    <h3 class="text-xl font-semibold mb-4">Enterprise-Grade Quality</h3>
+                    <p class="text-gray-600">Professional designs and features that enhance your brand credibility and trust with visitors.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-24 bg-white">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
-            <div class="max-w-3xl mx-auto space-y-8">
-                <div class="border-b border-gray-200 pb-8">
-                    <h3 class="text-xl font-semibold mb-4">How easy is it to get started?</h3>
-                    <p class="text-gray-600">Getting started is incredibly simple. Just sign up, choose a template, and customize it to your needs.</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=50&h=50&q=80" alt="John Smith" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">John Smith</h4>
+                            <p class="text-gray-600 text-sm">Marketing Director, TechCorp</p>
+                        </div>
+                        <div class="ml-auto flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"We increased our conversion rate by 150% after switching to Claude's landing page builder. The drag-and-drop interface made it incredibly easy to create and test different layouts."</p>
                 </div>
-                <div class="border-b border-gray-200 pb-8">
-                    <h3 class="text-xl font-semibold mb-4">Do I need technical skills?</h3>
-                    <p class="text-gray-600">No technical skills required. Our intuitive interface makes it easy for anyone to create professional landing pages.</p>
-                </div>
-                <div class="border-b border-gray-200 pb-8">
-                    <h3 class="text-xl font-semibold mb-4">Can I customize the design?</h3>
-                    <p class="text-gray-600">Yes, you have full control over the design. Customize colors, fonts, layouts, and more to match your brand.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="py-24 bg-blue-600">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Ready to create your landing page?</h2>
-            <p class="text-xl text-blue-100 mb-12">Start building your professional landing page today.</p>
-            <a href="https://fixrr.online" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-lg font-semibold rounded-md text-white hover:bg-white hover:text-blue-600 transition transform hover:scale-105 duration-300">
-                Get Started Now
-            </a>
-        </div>
-    </section>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=50&h=50&q=80" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <p class="text-gray-600 text-sm">Founder, StyleCo</p>
+                        </div>
+                        <div class="ml-auto flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The mobile-first design approach and fast loading speeds have been game-changers for our business. Our bounce rates dropped by 45% and mobile conversions doubled."</p>
+                </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-16">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Claude</h3>
-                    <p class="text-gray-400">Creating stunning landing pages in minutes.</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <p class="text-gray-400">contact@example.com</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
-                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
-                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-                <p class="text-gray-400">&copy; 2024 Claude. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=50&h=50&q=80" alt="Michael Chen" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Michael Chen</h4>
+                            <p class="text-gray-600 text-sm">CEO, GrowthX</p>
+                        </div>
+                        <div class="ml-auto flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2
 </body>
 </html>
